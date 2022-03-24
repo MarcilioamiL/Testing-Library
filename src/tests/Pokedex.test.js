@@ -25,6 +25,7 @@ describe(' Teste o componente Pokedex.js', () => {
   });
   it('Teste se a Pokédex tem os botões de filtro', () => {
     const number = 7;
+
     const btnFilter = screen.getAllByTestId('pokemon-type-button');
     expect(btnFilter).toHaveLength(number);
   });
