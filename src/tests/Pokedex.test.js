@@ -25,7 +25,6 @@ describe(' Teste o componente Pokedex.js', () => {
   });
   it('Teste se a Pokédex tem os botões de filtro', () => {
     const number = 7;
-
     const btnFilter = screen.getAllByTestId('pokemon-type-button');
     expect(btnFilter).toHaveLength(number);
   });
@@ -33,9 +32,9 @@ describe(' Teste o componente Pokedex.js', () => {
     const btnPoko = screen.getByRole('button', { name: /próximo pokémon/i });
     expect(btnPoko).toBeDefined();
 
-    const allBtnsClear = screen.getByRole('button', { name: /All/i });
+    const allBtnsClear = screen.getByRole('button', { name: 'All' });
     userEvent.click(allBtnsClear);
-    const allBtn = screen.getByText(/Pikachu/i);
-    expect(allBtn).toBeDefined();
+    const allBtn = screen.getByText('Pikachu');
+    expect(allBtn).toHaveTextContent('Pikachu');
   });
 });
