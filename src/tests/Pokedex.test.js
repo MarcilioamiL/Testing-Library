@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouter from './helpers/renderWithRouter';
 import App from '../App';
 
-describe(' Teste o componente <Pokedex.js />', () => {
+describe(' Teste o componente Pokedex.js', () => {
   beforeEach(() => {
     renderWithRouter(<App />);
   });

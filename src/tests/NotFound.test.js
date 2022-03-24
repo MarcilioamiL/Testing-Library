@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from './helpers/renderWithRouter';
 import NotFound from '../components/NotFound';
 
-describe.only('Verificando o componente <NotFound.js />', () => {
+describe.only('Verificando o componente NotFound.js', () => {
   beforeEach(() => {
     renderWithRouter(<NotFound />);
   });
