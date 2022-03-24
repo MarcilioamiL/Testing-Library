@@ -29,12 +29,13 @@ describe(' Teste o componente Pokedex.js', () => {
     expect(btnFilter).toHaveLength(number);
   });
   it('Teste se a Pokédex contém um botão para resetar o filtro', () => {
-    const btnPoko = screen.getByRole('button', { name: /próximo pokémon/i });
+    const btnPoko = screen.getByRole('button', { name: 'Dragon' });
     expect(btnPoko).toBeDefined();
-
-    const allBtnsClear = screen.getByRole('button', { name: 'All' });
+    const btnDragon = screen.findByText(/Charmander/i);
+    expect(btnDragon).toBeDefined();
+    const allBtnsClear = screen.getByRole('button', { name: /All/i });
     userEvent.click(allBtnsClear);
-    const allBtn = screen.getByText('Pikachu');
-    expect(allBtn).toHaveTextContent('Pikachu');
+    const allBtn = screen.getByText(/Pikachu/i);
+    expect(allBtn).toBeDefined();
   });
 });
