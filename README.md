@@ -22,7 +22,11 @@ Este projeto foi realizado durante meu estudo na escola [Trybe](https://www.betr
 Rode o seguinte comando dentro da pasta raiz para instalar as dependências do projeto:
 
 ``` npm install ```
+
 Em seguida rode o seguinte comando para iniciar a aplicação:
+
 ``` npm start ```
+
 Para executar os testes feitos na aplicação basta rodar:
+
 ``` npm test ```
